@@ -1,0 +1,14 @@
+description: >
+  Send job success notification.
+
+executor: default
+
+parameters:
+  webhook:
+    type: string
+    description: Webhook URL of Google chat.
+
+steps:
+  - checkout
+  - notify:
+      webhook: <<parameters.chat-webhook>>

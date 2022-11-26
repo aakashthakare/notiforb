@@ -15,8 +15,7 @@ jobs:
       - image: cimg/base:current
     steps:
       - checkout
-      - notiforb/notify
-          type: 'GCHAT'
+      - notiforb/gchat-notify
           webhook: $GCHAT_WEBHOOK
 workflows:
   test-deploy:
