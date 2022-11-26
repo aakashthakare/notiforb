@@ -5,3 +5,5 @@ executor: default
 
 steps:
   - notify
+      type: 'GCHAT'
+      webhook: $GCHAT_WEBHOOK
