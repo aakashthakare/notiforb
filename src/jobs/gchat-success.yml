@@ -11,4 +11,4 @@ parameters:
 steps:
   - checkout
   - notify:
-      webhook: <<parameters.chat-webhook>>
+      webhook: <<parameters.webhook>>
