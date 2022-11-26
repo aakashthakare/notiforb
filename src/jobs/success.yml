@@ -3,7 +3,16 @@ description: >
 
 executor: default
 
+parameters:
+  type:
+    type: string
+    description: Type of chat to which we need to send notification.
+  webhook:
+    type: string
+    description: Webhook URL of chat.
+
 steps:
+  - checkout
   - notify
-      type: 'GCHAT'
-      webhook: $GCHAT_WEBHOOK
+      type: <<parameters.type>>
+      webhook: <<parameters.webhook>>
