@@ -10,7 +10,7 @@ else
 fi
 
 if [ -z "$GCHAT_WEBHOOK" ]; then
-  NORB_REQUEST=$(cat gchat-request.json | envsubst)
+  NORB_REQUEST=$(< gchat-request.json envsubst)
   export NORB_REQUEST
 
   curl --header "Content-Type: application/json" \
