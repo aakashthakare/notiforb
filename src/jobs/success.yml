@@ -1,0 +1,7 @@
+description: >
+  Send job success notification.
+
+executor: default
+
+steps:
+  - notify

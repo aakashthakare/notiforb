@@ -15,8 +15,7 @@ jobs:
       - image: cimg/base:current
     steps:
       - checkout
-      # Run your orb's commands to validate them.
-      - notiforb/greet
+      - notiforb/notify
 workflows:
   test-deploy:
     jobs:

@@ -1,0 +1,17 @@
+description: >
+  This command notifies through provided webhook.
+
+steps:
+  - run:
+      name: success
+      when: on_success
+      command: |
+        echo -e 'export NORB_STATUS="COMPLETED"' > /tmp/NORB_ENVS
+  - run:
+      name: failure
+      when: on_fail
+      command: |
+        echo 'export NORB_STATUS="FAILED"' > /tmp/NORB_ENVS
+  - run:
+      name: notify
+      command: <<include(scripts/notify.sh)>>
