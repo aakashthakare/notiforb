@@ -18,6 +18,6 @@ else
   echo $request
   curl --header "Content-Type: application/json" \
        --request POST \
-       --data $request \
+       --data "$request" \
        "${GCHAT_WEBHOOK}"
 fi
