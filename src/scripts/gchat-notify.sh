@@ -14,7 +14,7 @@ then
   echo "Webhook URL is not provided."
 else
   CURRENT_DIR="$(pwd)"
-  echo $CURRENT_DIR
+  echo "$CURRENT_DIR"
   NORB_REQUEST=$(eval "echo \"$(cat "$CURRENT_DIR/gchat-request.json")\"")
   export NORB_REQUEST
 
