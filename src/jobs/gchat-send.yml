@@ -1,0 +1,14 @@
+description: >
+  Send notification.
+
+executor: default
+
+parameters:
+  message:
+    type: string
+    description: Message to send on Google chat.
+
+steps:
+  - checkout
+  - gchat-notify:
+      message: <<parameters.message>>

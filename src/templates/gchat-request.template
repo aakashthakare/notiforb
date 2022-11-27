@@ -1,0 +1,30 @@
+{
+  \"cards\": [
+    {
+      \"header\": {
+        \"title\": \"${NORB_MESSAGE}\",
+        \"subtitle\": \"Job : ${CIRCLE_JOB} | Author : ${CIRCLE_USERNAME}\"
+      },
+      \"sections\": [
+        {
+          \"widgets\": [
+            {
+              \"buttons\": [
+                {
+                  \"textButton\": {
+                    \"text\": \"Build\",
+                    \"onClick\": {
+                      \"openLink\": {
+                        \"url\": \"${CIRCLE_BUILD_URL}\"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
