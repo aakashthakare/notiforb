@@ -15,7 +15,6 @@ then
   echo "Webhook URL is not provided."
 else
   request="$(eval echo \""$GCHAT_REQ_TEMPLATE\"")"
-  echo $request
   curl --header "Content-Type: application/json" \
        --request POST \
        --data "$request" \
