@@ -1,13 +1,15 @@
-## notiforb
+# notiforb
+
 [![CircleCI Build Status](https://circleci.com/gh/akash-rt/notiforb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/akash-rt/notiforb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/akash-ccn/notiforb.svg)](https://circleci.com/orbs/registry/orb/akash-ccn/notiforb) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/akash-rt/notiforb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
-CircleCI ORB to push simple text notification to chats with the help of webhook.
+CircleCI ORB to push simple text notifications to chats with the help of webhook.
 
-#### Usage
+## Usage
 
 ```
 steps:
   - checkout
+  # ...
   - notiforb/gchat-notify:
       message: "Hi, this is CircleCI notifORB!"
 ```
