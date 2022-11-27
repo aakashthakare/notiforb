@@ -20,5 +20,6 @@ steps:
   - run:
       environment:
         WEBHOOK: <<parameters.webhook>>
+        GCHAT_REQ_TEMPLATE: <<include(templates/gchat-request.json)>>
       name: gchat-notify
       command: <<include(scripts/gchat-notify.sh)>>
