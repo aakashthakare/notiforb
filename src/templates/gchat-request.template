@@ -22,7 +22,7 @@
               \"buttons\": [
                 {
                   \"textButton\": {
-                    \"text\": \"${MESSAGE}\",
+                    \"text\": \"${NORB_MESSAGE}\",
                     \"onClick\": {
                       \"openLink\": {
                         \"url\": \"${CIRCLE_BUILD_URL}\"
