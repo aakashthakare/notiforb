@@ -2,24 +2,12 @@ description: >
   This command notifies through provided webhook.
 
 parameters:
-  webhook:
+  message:
     type: string
-    description: Webhook URL of Google Chat.
+    description: Text message to send on Google Chat.
 
-steps:
-  - run:
-      name: success
-      when: on_success
-      command: |
-        echo -e 'export NORB_STATUS="SUCCESS"' > /tmp/NORB_ENVS
-  - run:
-      name: failure
-      when: on_fail
-      command: |
-        echo 'export NORB_STATUS="FAIL"' > /tmp/NORB_ENVS
   - run:
       environment:
-        WEBHOOK: <<parameters.webhook>>
-        GCHAT_REQ_TEMPLATE: <<include(templates/gchat-request.json)>>
+        GCHAT_REQ_TEMPLATE: <<include(templates/gchat-request.template)>>
       name: gchat-notify
       command: <<include(scripts/gchat-notify.sh)>>

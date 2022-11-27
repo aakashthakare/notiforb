@@ -2,10 +2,8 @@
   \"cards\": [
     {
       \"header\": {
-        \"title\": \"${CIRCLE_JOB}-${NORB_STATUS}\",
-        \"subtitle\": \"${CIRCLE_PROJECT_REPONAME}-${CIRCLE_BRANCH}\",
-        \"imageUrl\": \"${NORB_IMAGE}\",
-        \"imageStyle\": \"IMAGE\"
+        \"title\": \"${CIRCLE_JOB}\",
+        \"subtitle\": \"${CIRCLE_PROJECT_REPONAME}-${CIRCLE_BRANCH}\"
       },
       \"sections\": [
         {
@@ -13,7 +11,7 @@
             {
               \"keyValue\": {
                 \"topLabel\": \"${CIRCLE_TAG}\",
-                \"content\": \"Author-${CIRCLE_USERNAME}\"
+                \"content\": \"${CIRCLE_USERNAME}\"
               }
             }
           ]
@@ -24,7 +22,7 @@
               \"buttons\": [
                 {
                   \"textButton\": {
-                    \"text\": \"DETAILS\",
+                    \"text\": \"${MESSAGE}\",
                     \"onClick\": {
                       \"openLink\": {
                         \"url\": \"${CIRCLE_BUILD_URL}\"
