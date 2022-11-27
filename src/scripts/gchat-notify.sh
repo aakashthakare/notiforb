@@ -1,5 +1,5 @@
 #!/bin/bash
-# shellcheck disable=SC2086,SC2016
+# shellcheck disable=SC2086,SC2016,SC2027
 
 # shellcheck source=/dev/null
 source /tmp/NORB_ENVS
