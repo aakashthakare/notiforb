@@ -3,7 +3,7 @@
     {
       \"header\": {
         \"title\": \"${NORB_MESSAGE}\",
-        \"subtitle\": \"${CIRCLE_JOB} ${CIRCLE_USERNAME}:${CIRCLE_TAG}\"
+        \"subtitle\": \"Job : ${CIRCLE_JOB} | Author : ${CIRCLE_USERNAME}\"
       },
       \"sections\": [
         {
