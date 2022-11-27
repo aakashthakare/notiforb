@@ -19,5 +19,5 @@ else
   curl --header "Content-Type: application/json" \
        --request POST \
        --data "$NORB_REQUEST" \
-       "${WEBHOOK}"
+       "${GCHAT_WEBHOOK}"
 fi
