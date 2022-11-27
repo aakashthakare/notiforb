@@ -11,4 +11,4 @@ parameters:
 steps:
   - checkout
   - gchat-notify:
-      message: <<parameters.webhook>>
+      message: <<parameters.message>>
