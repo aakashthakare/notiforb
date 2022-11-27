@@ -2,7 +2,7 @@
   "cards": [
     {
       "header": {
-        "title": "${CIRCLE_JOB} ${NORB_STATUS}",
+        "title": "${CIRCLE_JOB}-${NORB_STATUS}",
         "subtitle": "${CIRCLE_PROJECT_REPONAME}-${CIRCLE_BRANCH}",
         "imageUrl": "${NORB_IMAGE}",
         "imageStyle": "IMAGE"
