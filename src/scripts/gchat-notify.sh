@@ -14,7 +14,9 @@ if [ -z "${WEBHOOK}" ];
 then
   echo "Webhook URL is not provided."
 else
-  request="$(eval echo \""$GCHAT_REQ_TEMPLATE\""| sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed 's/`/\\`/g')"
+  request="$(eval echo \""$GCHAT_REQ_TEMPLATE\"")"
+  echo $request
+  echo ${GCHAT_WEBHOOK}
   curl --header "Content-Type: application/json" \
        --request POST \
        --data "$request" \
