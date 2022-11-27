@@ -16,7 +16,7 @@ jobs:
     steps:
       - checkout
       - notiforb/gchat-notify:
-          webhook: $GCHAT_WEBHOOK
+          webhook: GCHAT_WEBHOOK
 workflows:
   test-deploy:
     jobs:
