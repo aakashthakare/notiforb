@@ -2,8 +2,8 @@
   \"cards\": [
     {
       \"header\": {
-        \"title\": \"${CIRCLE_JOB} ${CIRCLE_USERNAME}:${CIRCLE_TAG} (${CIRCLE_PROJECT_REPONAME}-${CIRCLE_BRANCH})\",
-        \"subtitle\": \"${NORB_MESSAGE}\"
+        \"title\": \"${NORB_MESSAGE}\",
+        \"subtitle\": \"${CIRCLE_JOB} ${CIRCLE_USERNAME}:${CIRCLE_TAG}\"
       },
       \"sections\": [
         {
@@ -12,7 +12,7 @@
               \"buttons\": [
                 {
                   \"textButton\": {
-                    \"text\": \"BUILD\",
+                    \"text\": \"Build\",
                     \"onClick\": {
                       \"openLink\": {
                         \"url\": \"${CIRCLE_BUILD_URL}\"
