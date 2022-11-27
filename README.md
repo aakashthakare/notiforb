@@ -1,17 +1,16 @@
-# Orb Template
-
-
+## notiforb
 [![CircleCI Build Status](https://circleci.com/gh/akash-rt/notiforb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/akash-rt/notiforb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/akash-ccn/notiforb.svg)](https://circleci.com/orbs/registry/orb/akash-ccn/notiforb) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/akash-rt/notiforb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
+CircleCI ORB to push simple text notification to chats with the help of webhook.
 
+#### Usage
 
-A project template for Orbs.
-
-This repository is designed to be automatically ingested and modified by the CircleCI CLI's `orb init` command.
-
-_**Edit this area to include a custom title and description.**_
-
----
+```
+steps:
+  - checkout
+  - notiforb/gchat-notify:
+      message: "Hi, this is CircleCI notifORB!"
+```
 
 ## Resources
 
