@@ -13,11 +13,11 @@ if [ -z "${WEBHOOK}" ];
 then
   echo "Webhook URL is not provided."
 else
-  NORB_REQUEST=$(eval "echo \"$(cat "src/scripts/gchat-request.json")\"")
-  export NORB_REQUEST
+  NORB_REQUEST_JSON="temp_norb-request.json"
+  echo $(cat "src/scripts/gchat-request.json") > $NORB_REQUEST_JSON
 
   curl --header "Content-Type: application/json" \
        --request POST \
-       --data "$NORB_REQUEST" \
+       --data @$NORB_REQUEST_JSON \
        "${GCHAT_WEBHOOK}"
 fi
