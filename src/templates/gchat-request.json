@@ -1,33 +1,33 @@
 {
-  "cards": [
+  \"cards\": [
     {
-      "header": {
-        "title": "${CIRCLE_JOB}-${NORB_STATUS}",
-        "subtitle": "${CIRCLE_PROJECT_REPONAME}-${CIRCLE_BRANCH}",
-        "imageUrl": "${NORB_IMAGE}",
-        "imageStyle": "IMAGE"
+      \"header\": {
+        \"title\": \"${CIRCLE_JOB}-${NORB_STATUS}\",
+        \"subtitle\": \"${CIRCLE_PROJECT_REPONAME}-${CIRCLE_BRANCH}\",
+        \"imageUrl\": \"${NORB_IMAGE}\",
+        \"imageStyle\": \"IMAGE\"
       },
-      "sections": [
+      \"sections\": [
         {
-          "widgets": [
+          \"widgets\": [
             {
-              "keyValue": {
-                "topLabel": "${CIRCLE_TAG}",
-                "content": "Author-${CIRCLE_USERNAME}"
+              \"keyValue\": {
+                \"topLabel\": \"${CIRCLE_TAG}\",
+                \"content\": \"Author-${CIRCLE_USERNAME}\"
               }
             }
           ]
         },
         {
-          "widgets": [
+          \"widgets\": [
             {
-              "buttons": [
+              \"buttons\": [
                 {
-                  "textButton": {
-                    "text": "DETAILS",
-                    "onClick": {
-                      "openLink": {
-                        "url": "${CIRCLE_BUILD_URL}"
+                  \"textButton\": {
+                    \"text\": \"DETAILS\",
+                    \"onClick\": {
+                      \"openLink\": {
+                        \"url\": \"${CIRCLE_BUILD_URL}\"
                       }
                     }
                   }
