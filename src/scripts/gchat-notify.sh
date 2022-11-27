@@ -9,7 +9,10 @@ else
   export NORB_IMAGE="https://i.ibb.co/Sw6v9YH/cancel.png"
 fi
 
-if [ -z "${WEBHOOK}" ]; then
+if [ -z "${WEBHOOK}" ];
+then
+  echo "Webhook URL is not provided."
+else
   NORB_REQUEST=$(< gchat-request.json envsubst)
   export NORB_REQUEST
 
