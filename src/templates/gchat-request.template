@@ -2,7 +2,7 @@
   \"cards\": [
     {
       \"header\": {
-        \"title\": \"<font color=\"green\">${NORB_MESSAGE}</font>\",
+        \"title\": \"${NORB_MESSAGE}\",
         \"subtitle\": \"Job : ${CIRCLE_JOB} | Author : ${CIRCLE_USERNAME}\"
       },
       \"sections\": [
