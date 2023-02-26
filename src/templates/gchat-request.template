@@ -12,7 +12,7 @@
               \"buttons\": [
                 {
                   \"textButton\": {
-                    \"text\": \"Build\",
+                    \"text\": \"<font color=\"#80e27e\">Build</font>\",
                     \"onClick\": {
                       \"openLink\": {
                         \"url\": \"${CIRCLE_BUILD_URL}\"
