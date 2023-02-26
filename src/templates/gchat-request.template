@@ -5,10 +5,10 @@
           \"card\": {
               \"header\": {
                 \"title\": \"${CIRCLE_PROJECT_REPONAME}\"
+                \"subtitle\": \"Job : ${CIRCLE_JOB} | Author : ${CIRCLE_USERNAME}\",
               },
               \"sections\": [
                 {
-                  \"header\": \"Job : ${CIRCLE_JOB} | Author : ${CIRCLE_USERNAME}\",
                   \"widgets\": [
                    {
                      \"decoratedText\": {
