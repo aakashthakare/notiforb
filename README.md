@@ -12,6 +12,7 @@ steps:
   # ...
   - notiforb/gchat-notify:
       message: "Hi, this is CircleCI notifORB!"
+  - notiforb/gchat-result
 ```
 
 ## Resources

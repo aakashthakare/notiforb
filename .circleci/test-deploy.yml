@@ -17,6 +17,7 @@ jobs:
       - checkout
       - notiforb/gchat-notify:
           message: "Hi, this is CircleCI notifORB!"
+      - notiforb/gchat-result
 
 workflows:
   test-deploy:

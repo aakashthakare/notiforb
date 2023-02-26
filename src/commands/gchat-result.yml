@@ -1,0 +1,20 @@
+description: >
+  This command notifies about job success and failure through provided webhook.
+
+steps:
+  - run:
+      when: on_success
+      environment:
+        GCHAT_REQ_TEMPLATE: <<include(templates/gchat-request.template)>>
+        NORB_MESSAGE: "SUCCESS"
+        NORB_MESSAGE_COLOR: "#3D9A58"
+      name: gchat-result
+      command: <<include(scripts/gchat-notify.sh)>>
+  - run:
+      when: on_fail
+      environment:
+        GCHAT_REQ_TEMPLATE: <<include(templates/gchat-request.template)>>
+        NORB_MESSAGE: "FAILURE"
+        NORB_MESSAGE_COLOR: "#DA5B3C"
+      name: gchat-result
+      command: <<include(scripts/gchat-notify.sh)>>
