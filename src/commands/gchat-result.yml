@@ -1,11 +1,6 @@
 description: >
   This command notifies about job success and failure through provided webhook.
 
-parameters:
-  message:
-    type: string
-    description: Text message to send on Google Chat.
-
 steps:
   - run:
       when: on_success
