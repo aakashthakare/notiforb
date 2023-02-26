@@ -15,14 +15,12 @@
                       \"buttonList\": {
                           \"buttons\": [
                             {
-                              \"textButton\": {
                                 \"text\": \"Build\",
                                 \"onClick\": {
                                   \"openLink\": {
                                     \"url\": \"${CIRCLE_BUILD_URL}\"
                                   }
                                 }
-                              }
                             }
                           ]
                         }
