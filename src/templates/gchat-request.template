@@ -4,8 +4,8 @@
           \"cardId\": \"circleci-notiforb-card\",
           \"card\": {
               \"header\": {
-                \"title\": \"${CIRCLE_PROJECT_REPONAME}\"
-                \"subtitle\": \"Job : ${CIRCLE_JOB} | Author : ${CIRCLE_USERNAME}\",
+                \"title\": \"${CIRCLE_PROJECT_REPONAME}\",
+                \"subtitle\": \"Job : ${CIRCLE_JOB} | Author : ${CIRCLE_USERNAME}\"
               },
               \"sections\": [
                 {
