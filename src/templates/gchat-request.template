@@ -4,32 +4,31 @@
           \"cardId\": \"circleci-notiforb-card\",
           \"card\": {
               \"header\": {
-                \"title\": \"${CIRCLE_JOB}\",
-                \"subtitle\": \"Author : ${CIRCLE_USERNAME}\"
+                \"title\": \"${CIRCLE_PROJECT_REPONAME}\",
+                \"subtitle\": \"${CIRCLE_JOB}\"
               },
               \"sections\": [
                 {
-                  \"header\": \"${CIRCLE_JOB}\",
+                  \"header\": \"Author : ${CIRCLE_USERNAME}\",
                   \"widgets\": [
-                    {
-                      \"buttonList\": {
-                          \"buttons\": [
-                            {
-                                \"text\": \"Build\",
-                                \"onClick\": {
-                                  \"openLink\": {
-                                    \"url\": \"${CIRCLE_BUILD_URL}\"
-                                  }
-                                }
-                            }
-                          ]
-                        }
-
-                    },
                    {
                      \"decoratedText\": {
                        \"text\": \"<font color='#80e27e'>${NORB_MESSAGE}</font>\",
                      }
+                   },
+                   {
+                     \"buttonList\": {
+                         \"buttons\": [
+                           {
+                               \"text\": \"Build\",
+                               \"onClick\": {
+                                 \"openLink\": {
+                                   \"url\": \"${CIRCLE_BUILD_URL}\"
+                                 }
+                               }
+                           }
+                         ]
+                       }
                    }
                 ]
               }
