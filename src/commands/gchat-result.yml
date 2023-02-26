@@ -6,13 +6,15 @@ steps:
       when: on_success
       environment:
         GCHAT_REQ_TEMPLATE: <<include(templates/gchat-request.template)>>
-        NORB_MESSAGE: "<font color=\"green\">SUCCESS</font>"
+        NORB_MESSAGE: "SUCCESS"
+        NORB_MESSAGE_COLOR: "green"
       name: gchat-result
       command: <<include(scripts/gchat-notify.sh)>>
   - run:
       when: on_fail
       environment:
         GCHAT_REQ_TEMPLATE: <<include(templates/gchat-request.template)>>
-        NORB_MESSAGE: "<font color=\"red\">FAILURE</font>"
+        NORB_MESSAGE: "FAILURE"
+        NORB_MESSAGE_COLOR: "red"
       name: gchat-result
       command: <<include(scripts/gchat-notify.sh)>>
