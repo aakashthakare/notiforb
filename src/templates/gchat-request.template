@@ -1,41 +1,42 @@
 {
   \"cardsV2\": [
-  {
-  \"cardId\": \"circleci-notiforb-card\",
-  \"card\":
-    {
-          \"header\": {
-            \"title\": \"${CIRCLE_JOB}\",
-            \"subtitle\": \"Author : ${CIRCLE_USERNAME}\"
-          },
-          \"sections\": [
-            {
-              \"header\": \"${CIRCLE_JOB}\",
-              \"widgets\": [
-            {
-              \"buttonList\": {
-                  \"buttons\": [
+      {
+          \"cardId\": \"circleci-notiforb-card\",
+          \"card\": {
+              \"header\": {
+                \"title\": \"${CIRCLE_JOB}\",
+                \"subtitle\": \"Author : ${CIRCLE_USERNAME}\"
+              },
+              \"sections\": [
+                {
+                  \"header\": \"${CIRCLE_JOB}\",
+                  \"widgets\": [
                     {
-                      \"textButton\": {
-                        \"text\": \"Build\",
-                        \"onClick\": {
-                          \"openLink\": {
-                            \"url\": \"${CIRCLE_BUILD_URL}\"
-                          }
+                      \"buttonList\": {
+                          \"buttons\": [
+                            {
+                              \"textButton\": {
+                                \"text\": \"Build\",
+                                \"onClick\": {
+                                  \"openLink\": {
+                                    \"url\": \"${CIRCLE_BUILD_URL}\"
+                                  }
+                                }
+                              }
+                            }
+                          ]
                         }
-                      }
-                    }
-                  ]
-                }
 
-            },
-           {
-             \"decoratedText\": {
-               \"text\": \"<font color='#80e27e'>${NORB_MESSAGE}</font>\",
-             }
-           }
-          ]
-        }
+                    },
+                   {
+                     \"decoratedText\": {
+                       \"text\": \"<font color='#80e27e'>${NORB_MESSAGE}</font>\",
+                     }
+                   }
+                ]
+              }
+            ]
+          }
       }
   ]
 }
