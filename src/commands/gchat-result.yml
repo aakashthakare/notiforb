@@ -7,7 +7,7 @@ steps:
       environment:
         GCHAT_REQ_TEMPLATE: <<include(templates/gchat-request.template)>>
         NORB_MESSAGE: "SUCCESS"
-        NORB_MESSAGE_COLOR: "#80e27e"
+        NORB_MESSAGE_COLOR: "#3D9A58"
       name: gchat-result
       command: <<include(scripts/gchat-notify.sh)>>
   - run:
@@ -15,6 +15,6 @@ steps:
       environment:
         GCHAT_REQ_TEMPLATE: <<include(templates/gchat-request.template)>>
         NORB_MESSAGE: "FAILURE"
-        NORB_MESSAGE_COLOR: "red"
+        NORB_MESSAGE_COLOR: "#DA5B3C"
       name: gchat-result
       command: <<include(scripts/gchat-notify.sh)>>
