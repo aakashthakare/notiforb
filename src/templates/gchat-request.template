@@ -10,8 +10,10 @@
           },
           \"sections\": [
             {
+              \"header\": \"${CIRCLE_JOB}\",
               \"widgets\": [
-                {
+            {
+              \"buttonList\": {
                   \"buttons\": [
                     {
                       \"textButton\": {
@@ -25,7 +27,7 @@
                     }
                   ]
                 }
-              ]
+
             },
            {
              \"decoratedText\": {
