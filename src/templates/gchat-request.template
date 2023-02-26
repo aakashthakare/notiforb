@@ -13,7 +13,7 @@
                   \"widgets\": [
                    {
                      \"decoratedText\": {
-                       \"text\": \"<font color=\"${NORB_MESSAGE_COLOR}\">${NORB_MESSAGE}</font>\",
+                       \"text\": \"<font color='${NORB_MESSAGE_COLOR}'>${NORB_MESSAGE}</font>\",
                      }
                    },
                    {
