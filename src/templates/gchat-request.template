@@ -1,35 +1,39 @@
 {
   \"cardsV2\": [
+  {
+  \"cardId\": \"circleci-notiforb-card\",
+  \"card\":
     {
-      \"header\": {
-        \"title\": \"${NORB_MESSAGE}\",
-        \"subtitle\": \"Job : ${CIRCLE_JOB} | Author : ${CIRCLE_USERNAME}\"
-      },
-      \"sections\": [
-        {
-          \"widgets\": [
+          \"header\": {
+            \"title\": \"${CIRCLE_JOB}\",
+            \"subtitle\": \"Author : ${CIRCLE_USERNAME}\"
+          },
+          \"sections\": [
             {
-              \"buttons\": [
+              \"widgets\": [
                 {
-                  \"textButton\": {
-                    \"text\": \"Build\",
-                    \"onClick\": {
-                      \"openLink\": {
-                        \"url\": \"${CIRCLE_BUILD_URL}\"
+                  \"buttons\": [
+                    {
+                      \"textButton\": {
+                        \"text\": \"Build\",
+                        \"onClick\": {
+                          \"openLink\": {
+                            \"url\": \"${CIRCLE_BUILD_URL}\"
+                          }
+                        }
                       }
                     }
-                  }
+                  ]
                 }
               ]
-            }
+            },
+           {
+             \"decoratedText\": {
+               \"text\": \"<font color='#80e27e'>${NORB_MESSAGE}</font>\",
+             }
+           }
           ]
-        },
-       {
-         \"decoratedText\": {
-           \"text\": \"<font color='#80e27e'>SUCCESS</font>\",
-         }
-       }
-      ]
-    }
+        }
+      }
   ]
 }
