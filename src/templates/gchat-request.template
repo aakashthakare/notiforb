@@ -1,5 +1,5 @@
 {
-  \"cards\": [
+  \"cardsV2\": [
     {
       \"header\": {
         \"title\": \"${NORB_MESSAGE}\",
