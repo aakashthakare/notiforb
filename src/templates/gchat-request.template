@@ -4,15 +4,15 @@
           \"cardId\": \"circleci-notiforb-card\",
           \"card\": {
               \"header\": {
-                \"title\": \"${CIRCLE_PROJECT_REPONAME}\",
-                \"subtitle\": \"Job : ${CIRCLE_JOB} | Author : ${CIRCLE_USERNAME}\"
+                \"title\": \"${CIRCLE_PROJECT_REPONAME}\"
               },
               \"sections\": [
                 {
+                  \"header\": \"Job: ${CIRCLE_JOB} | Author: ${CIRCLE_USERNAME}\",
                   \"widgets\": [
                    {
                      \"decoratedText\": {
-                       \"text\": \"<font color='${NORB_MESSAGE_COLOR}'><b>${NORB_MESSAGE}</b></font>\",
+                       \"text\": \"<font color='${NORB_MESSAGE_COLOR}'><b>${NORB_MESSAGE}</b></font><br>\",
                      }
                    },
                    {
